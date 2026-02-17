@@ -16,6 +16,7 @@ env:
   ORCH_CLIENT_SECRET: ${{ secrets.UIPATHCLIENTSECRET }}
   #ORCH_USER_KEY: ${{ secrets.UIPATHUSERKEY }}
   ORCH_ACC_NAME: Kunal_Cloud
+  CLI_URL: https://uipath.visualstudio.com/Public.Feeds/_artifacts/feed/UiPath-Official/NuGet/UiPath.CLI.Windows/overview/25.10.8
 
 jobs:
   print-details:

@@ -48,12 +48,12 @@ jobs:
     steps: 
       - name: Check out repository code
         # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Build Nuget Package
         shell: pwsh
         run: ${{ github.workspace }}\scripts\UiPathPack.ps1 ${{ github.workspace }}\project.json -destination_folder ${{ github.workspace }}\package
       - name: Upload UiPath Artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: Artifacts
           path: |
@@ -64,7 +64,7 @@ jobs:
     runs-on: windows-latest
     steps: 
       - name: Download UiPath Artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: Artifacts
       - name: Publish Nuget Package to DEV

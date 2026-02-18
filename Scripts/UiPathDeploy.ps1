@@ -161,7 +161,8 @@ if($uipathCliFilePath -ne ""){
             }
         }
         catch {
-            WriteLog ("Error Occured : " + $_.Exception.Message) -err $_.Exception
+            WriteLog ("Catch Eexecuted :")
+			WriteLog ("Error Occured : " + $_.Exception.Message) -err $_.Exception
             exit 1
         }
         

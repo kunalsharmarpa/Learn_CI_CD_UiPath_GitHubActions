@@ -216,7 +216,7 @@ if($applicationSecret -ne ""){
 }
 if($applicationScope -ne ""){
     $ParamList.Add("--applicationScope")
-    $ParamList.Add("`"$applicationScope`"")
+    $ParamList.Add($applicationScope)
 }
 if($account_name -ne ""){
     $ParamList.Add("--accountName")
@@ -236,7 +236,7 @@ if($orchestrator_pass -ne ""){
 }
 if($folder_organization_unit -ne ""){
     $ParamList.Add("--organizationUnit")
-    $ParamList.Add("`"$folder_organization_unit`"")
+    $ParamList.Add($folder_organization_unit)
 }
 if($environment_list -ne ""){
     $ParamList.Add("--environments")

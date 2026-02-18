@@ -10,7 +10,7 @@ env:
   # Replace with your Orchestrator Values 
   PROJECT_NAME: CICD_Automation                         
   ORCH_FOLDER: CICD
-  ORCH_URL: https://cloud.uipath.com/kunal_cloud/DefaultTenant
+  ORCH_URL: https://cloud.uipath.com
   ORCH_TENANT: DefaultTenant
   ORCH_SCOPE: "OR.Execution OR.Execution.Read OR.Execution.Write OR.Folders OR.Folders.Read OR.Folders.Write"
   ORCH_CLIENT_ID: ${{ secrets.UIPATHCLIENTID }}

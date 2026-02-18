@@ -196,9 +196,9 @@ if($project_path -eq "" -or $destination_folder -eq "")
 }
 $ParamList.Add("package")
 $ParamList.Add("pack")
-$ParamList.Add("`"$project_path`"")
+$ParamList.Add($project_path)
 $ParamList.Add("--output")
-$ParamList.Add("`"$destination_folder`"")
+$ParamList.Add($destination_folder)
 
 if($libraryOrchestratorUrl -ne ""){
     $ParamList.Add("--libraryOrchestratorUrl")

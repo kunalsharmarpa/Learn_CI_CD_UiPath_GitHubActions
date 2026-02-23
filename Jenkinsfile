@@ -54,23 +54,24 @@ pipeline {
                 echo "Deploying ${BRANCH_NAME} to UAT"
                 UiPathDeploy(
                     packagePath: "Output\\${env.BUILD_NUMBER}",
-                    createProcess: true,
-                    orchestratorAddress: "${UIPATH_ORCH_URL}",
-                    orchestratorTenant: "${UIPATH_ORCH_TENANT_NAME}",
-                    folderName: "${UIPATH_ORCH_FOLDER_NAME}",
-                    environments: 'DEV',
+                    processName: 'CICD_Automation',
+                    entryPointPaths: 'Main.xaml',
+                    orchestratorAddress: 'https://cloud.uipath.com/',
+                    orchestratorTenant: 'DefaultTenant',
+                    folderName: 'DefaultTenant',
+                    environments: '',
+                    ignoreLibraryDeployConflict: false,
+                    traceLevel: 'None',
 
-                    // 🔥 Correct External App OAuth Authentication
                     credentials: [
                         $class: 'ExternalAppAuthenticationEntry',
-                        applicationId: "${UIPATH_CLIENT_ID}",
-                        applicationSecret: "${UIPATH_CLIENT_SECRET}",
-                        accountName: "${UIPATH_ORCH_ACCOUNT_NAME}",
-                        scopes: "${UIPATH_SCOPES}"
-                    ],
+                        accountForApp: 'Kunal_Cloud',
+                        applicationId: '690a837f-f107-42ab-ba7c-6aa2e199c006',
+                        applicationSecret: UIPATH_CLIENT_SECRET,     // ← no quotes, no interpolation
+                        applicationScope: 'OR.Folders OR.Folders.Read OR.Folders.Write OR.Execution OR.Execution.Read OR.Execution.Write',
+                        identityUrl: ''
+                    ]
 
-                    traceLevel: 'None',
-                    entryPointPaths: 'Main.xaml'
                 ) 
               
             }

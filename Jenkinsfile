@@ -59,7 +59,7 @@ pipeline {
                     entryPointPaths: 'Main.xaml',
                     orchestratorAddress: 'https://cloud.uipath.com/',
                     orchestratorTenant: 'DefaultTenant',
-                    folderName: 'DefaultTenant',
+                    folderName: 'CICD',
                     environments: '',
                     ignoreLibraryDeployConflict: false,
                     traceLevel: 'None',

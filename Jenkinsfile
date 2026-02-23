@@ -54,6 +54,7 @@ pipeline {
                 echo "Deploying ${BRANCH_NAME} to UAT"
                 UiPathDeploy(
                     packagePath: "Output\\${env.BUILD_NUMBER}",
+                    createProcess: true,
                     orchestratorAddress: "${UIPATH_ORCH_URL}",
                     orchestratorTenant: "${UIPATH_ORCH_TENANT_NAME}",
                     folderName: "${UIPATH_ORCH_FOLDER_NAME}",

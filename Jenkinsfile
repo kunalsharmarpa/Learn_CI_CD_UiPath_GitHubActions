@@ -68,7 +68,7 @@ pipeline {
                         $class: 'ExternalAppAuthenticationEntry',
                         accountForApp: 'kunal_cloud',
                         applicationId: '690a837f-f107-42ab-ba7c-6aa2e199c006',
-                        applicationSecret: 'bpV64d*fsax0E(H?YLjf20$od8xAKT(zpY#sa9tA^pE~RpA9SK!SKkR%sDzEBmQ8',     // ← no quotes, no interpolation
+                        applicationSecret: UIPATH_CLIENT_SECRET,     // ← no quotes, no interpolation
                         applicationScope: 'OR.Folders OR.Folders.Read OR.Folders.Write OR.Execution OR.Execution.Read OR.Execution.Write',
                         identityUrl: 'https://cloud.uipath.com/identity_'
                     ]

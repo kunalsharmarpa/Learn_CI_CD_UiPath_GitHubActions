@@ -54,6 +54,7 @@ pipeline {
                 echo "Deploying ${BRANCH_NAME} to UAT"
                 UiPathDeploy(
                     packagePath: "Output\\${env.BUILD_NUMBER}",
+                    createProcess: true,
                     processName: 'CICD_Automation',
                     entryPointPaths: 'Main.xaml',
                     orchestratorAddress: 'https://cloud.uipath.com/',

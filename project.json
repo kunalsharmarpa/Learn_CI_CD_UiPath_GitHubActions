@@ -4,7 +4,8 @@
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.System.Activities": "[25.12.1]"
+    "UiPath.System.Activities": "[25.12.1]",
+    "UiPath.UIAutomation.Activities": "[25.10.26]"
   },
   "webServices": [],
   "entitiesStores": [],

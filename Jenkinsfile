@@ -57,7 +57,7 @@ pipeline {
                     createProcess: true,
                     processName: 'CICD_Automation',
                     entryPointPaths: 'Main.xaml',
-                    orchestratorAddress: 'https://cloud.uipath.com',
+                    orchestratorAddress: 'https://cloud.uipath.com/',
                     orchestratorTenant: 'DefaultTenant',
                     folderName: 'CICD',
                     environments: '',

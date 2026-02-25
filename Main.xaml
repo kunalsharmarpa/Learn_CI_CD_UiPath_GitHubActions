@@ -113,6 +113,6 @@
         <OutArgument x:TypeArguments="x:String">[text]</OutArgument>
       </ui:GetVisibleText.Text>
     </ui:GetVisibleText>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="449.6,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Hello CICD Attempt 17&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="449.6,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Hello CICD Attempt 18&quot;]" />
   </Sequence>
 </Activity>

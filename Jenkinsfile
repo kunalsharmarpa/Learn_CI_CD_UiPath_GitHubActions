@@ -34,6 +34,7 @@ pipeline {
             steps {
                 echo "Building..with ${WORKSPACE}"
                 UiPathPack(
+                    cliPath: 'C:/Users/kajal/Downloads/UiPath.CLI.Windows.25.10.9',
                     outputPath: "Output\\${env.BUILD_NUMBER}",
                     projectJsonPath: "project.json",
                     version: [$class: 'ManualVersionEntry', version: "${MAJOR}.${MINOR}.${env.BUILD_NUMBER}"],

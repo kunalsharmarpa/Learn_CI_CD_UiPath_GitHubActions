@@ -98,21 +98,6 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:GetVisibleText FormattedText="{x:Null}" WordsInfo="{x:Null}" DisplayName="Get Visible Text 'VIDEO'" sap:VirtualizedContainerService.HintSize="449.6,139.2" sap2010:WorkflowViewState.IdRef="GetVisibleText_1">
-      <ui:GetVisibleText.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="03f68326-8f37-450d-b6a1-c42957000995" InformativeScreenshot="4d1bf2eacaf44d9fdd11826b23319a88" Selector="&lt;html app='chrome.exe' title='CI/CD Pipelines for UiPath Process Deployment Series: Azure DevOps - YouTube' /&gt;&lt;webctrl tag='VIDEO' /&gt;">
-          <ui:Target.TimeoutMS>
-            <InArgument x:TypeArguments="x:Int32" />
-          </ui:Target.TimeoutMS>
-          <ui:Target.WaitForReady>
-            <InArgument x:TypeArguments="ui:WaitForReady" />
-          </ui:Target.WaitForReady>
-        </ui:Target>
-      </ui:GetVisibleText.Target>
-      <ui:GetVisibleText.Text>
-        <OutArgument x:TypeArguments="x:String">[text]</OutArgument>
-      </ui:GetVisibleText.Text>
-    </ui:GetVisibleText>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="449.6,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Hello CICD Attempt 18&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="449.6,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Hello CICD Attempt 19&quot;]" />
   </Sequence>
 </Activity>

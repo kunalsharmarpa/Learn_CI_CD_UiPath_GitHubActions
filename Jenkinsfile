@@ -14,7 +14,7 @@ pipeline {
         // External App OAuth
         UIPATH_CLIENT_ID     = credentials('UIPATH_CLIENT_ID')
         UIPATH_CLIENT_SECRET = credentials('UIPATH_CLIENT_SECRET')
-        UIPATH_SCOPES        = "OR.Folders OR.Folders.Read OR.Folders.Write OR.Execution OR.Execution.Read OR.Execution.Write"
+        UIPATH_SCOPES        = "OR.Assets OR.Assets.Write OR.BackgroundTasks OR.BackgroundTasks.Read OR.BackgroundTasks.Write OR.Execution OR.Execution.Read OR.Execution.Write OR.Folders OR.Folders.Read OR.Folders.Write OR.Jobs OR.Jobs.Read OR.Jobs.Write OR.Machines.Read OR.Monitoring OR.Monitoring.Read OR.Robots.Read OR.Settings.Read OR.TestSetExecutions OR.TestSetExecutions.Read OR.TestSetExecutions.Write OR.TestSets OR.TestSets.Read OR.TestSets.Write"
     }
 
     stages {

@@ -53,7 +53,7 @@ pipeline {
             steps {
                 echo "Deploying ${BRANCH_NAME} to UAT"
                 UiPathDeploy(
-                    cliVersion: '25.10.7',
+                    cliPath: 'C:\Users\kajal\Downloads\UiPath.CLI.Windows.25.10.9',
                     packagePath: "Output\\${env.BUILD_NUMBER}",
                     createProcess: true,
                     processName: 'CICD_Automation',
